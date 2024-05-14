@@ -4,8 +4,8 @@
  */
 export const sayHello = (name) => {
   if (!name) {
-    return "Hello, World";
+    return "Hello world !";
   }
 
-  return `Hello, ${name}`;
+  return `Hello ${name}`;
 };
