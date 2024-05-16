@@ -4,4 +4,8 @@ describe("sayHello test", () => {
   it('should return : "Hello world !"', () => {
     expect(sayHello()).toBe("Hello world !");
   });
+
+  it('should return : "Hello Vikito"', () => {
+    expect(sayHello("Vikito")).toBe("Hello Vikito");
+  });
 });
