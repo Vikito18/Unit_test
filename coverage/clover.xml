@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1715963909567" clover="3.2.0">
-  <project timestamp="1715963909567" name="All files">
+<coverage generated="1715964236242" clover="3.2.0">
+  <project timestamp="1715964236242" name="All files">
     <metrics statements="6" coveredstatements="5" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1" elements="11" coveredelements="9" complexity="0" loc="6" ncloc="6" packages="1" files="1" classes="1"/>
     <file name="unit1.js" path="/Users/vikito/Desktop/Unit_test/js/samples/unit/unit1.js">
       <metrics statements="6" coveredstatements="5" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
