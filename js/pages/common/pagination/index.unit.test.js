@@ -12,4 +12,8 @@ describe("Pagination Unit test suites", () => {
   it("should return : 1", () => {
     expect(Pagination.getNumberOfPages(7)).toEqual(1);
   });
+
+  it("should return : 5", () => {
+    expect(Pagination.getNumberOfPages(34)).toEqual(5);
+  });
 });
