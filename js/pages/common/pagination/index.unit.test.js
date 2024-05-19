@@ -5,7 +5,11 @@ describe("Pagination Unit test suites", () => {
     expect(Pagination.getNumberOfPages(12)).toBeDefined();
   });
 
-  it(`should return : "0"`, () => {
-    expect(Pagination.getNumberOfPages(0)).toBe(0);
+  it(`should return : 0`, () => {
+    expect(Pagination.getNumberOfPages(0)).toEqual(0);
+  });
+
+  it("should return : 1", () => {
+    expect(Pagination.getNumberOfPages(7)).toEqual(1);
   });
 });
