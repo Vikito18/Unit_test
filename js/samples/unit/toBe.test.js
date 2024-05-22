@@ -14,4 +14,8 @@ describe("toBe unit test suite", () => {
   it("should be black", () => {
     expect(color).toBe("black");
   });
+
+  it("should not return orange", () => {
+    expect(color).not.toBe("orange");
+  });
 });
