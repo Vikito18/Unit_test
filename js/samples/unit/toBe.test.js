@@ -4,8 +4,14 @@ const profile = {
   age: 18,
 };
 
+const color = "black";
+
 describe("toBe unit test suite", () => {
   it("sould return firstname", () => {
     expect(profile.name).toBe("vikito");
+  });
+
+  it("should be black", () => {
+    expect(color).toBe("black");
   });
 });
