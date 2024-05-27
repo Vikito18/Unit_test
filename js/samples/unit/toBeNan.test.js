@@ -6,6 +6,6 @@ describe("toBeNan unit test suites", () => {
     expect(sum(2, 8)).not.toBeNaN();
   });
   it("sould return a Nan", () => {
-    expect(string(2, 8)).toBeNaN();
+    expect(string("hello", 8)).toBeNaN();
   });
 });
