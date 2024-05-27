@@ -8,4 +8,8 @@ describe("sayHello test", () => {
   it('should return : "Hello Vikito"', () => {
     expect(sayHello("Vikito")).toBe("Hello Vikito");
   });
+
+  it("should return : Bonjour, Victor", () => {
+    expect(sayHello("Victor")).toBe("Bonjour, Victor");
+  });
 });
