@@ -1,3 +1,7 @@
+/**
+ * @jest-environment jsdom
+ */
+
 import { getByTestId } from "@testing-library/dom";
 
 describe("Sample 1 integration test suites", () => {
