@@ -17,4 +17,17 @@ describe("route integration test suites", () => {
       "Veuillez vous connecter"
     );
   });
+
+  it("should display home page", async () => {
+    document.body.innerHTML = `
+    <div id="root"></div>`;
+
+    document.location = "/#/home";
+
+    await router();
+
+    expect(getByTestId(document.body, "home-sensors-title")).toHaveTextContent(
+      "Vos capteurs"
+    );
+  });
 });
