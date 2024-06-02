@@ -1,28 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1717323333802" clover="3.2.0">
-  <project timestamp="1717323333802" name="All files">
-    <metrics statements="43" coveredstatements="16" conditionals="8" coveredconditionals="7" methods="14" coveredmethods="4" elements="65" coveredelements="27" complexity="0" loc="43" ncloc="43" packages="8" files="8" classes="8"/>
+<coverage generated="1717343328060" clover="3.2.0">
+  <project timestamp="1717343328060" name="All files">
+    <metrics statements="103" coveredstatements="42" conditionals="33" coveredconditionals="12" methods="36" coveredmethods="11" elements="172" coveredelements="65" complexity="0" loc="103" ncloc="103" packages="17" files="19" classes="19"/>
     <package name="data">
-      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="mock-facade-detail-data.js" path="/Users/vikito/Desktop/Unit_test/data/mock-facade-detail-data.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
       <file name="mock-homepage-data.js" path="/Users/vikito/Desktop/Unit_test/data/mock-homepage-data.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="2" type="stmt"/>
+        <line num="1" count="3" type="stmt"/>
+      </file>
+      <file name="mock-weather-api-data.js" path="/Users/vikito/Desktop/Unit_test/data/mock-weather-api-data.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
       </file>
     </package>
     <package name="js">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="constants.js" path="/Users/vikito/Desktop/Unit_test/js/constants.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="js.pages.404">
+      <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="index.js" path="/Users/vikito/Desktop/Unit_test/js/pages/404/index.js">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="js.pages.addSensor">
+      <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="index.js" path="/Users/vikito/Desktop/Unit_test/js/pages/addSensor/index.js">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="3" count="1" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
       </file>
     </package>
     <package name="js.pages.common.header">
       <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
       <file name="index.js" path="/Users/vikito/Desktop/Unit_test/js/pages/common/header/index.js">
         <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
       </file>
     </package>
@@ -30,7 +54,7 @@
       <metrics statements="12" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="1"/>
       <file name="index.js" path="/Users/vikito/Desktop/Unit_test/js/pages/common/pagination/index.js">
         <metrics statements="12" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="1"/>
-        <line num="5" count="1" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
         <line num="11" count="4" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
         <line num="15" count="0" type="stmt"/>
@@ -44,11 +68,24 @@
         <line num="36" count="0" type="stmt"/>
       </file>
     </package>
+    <package name="js.pages.facadeDetails">
+      <metrics statements="7" coveredstatements="1" conditionals="4" coveredconditionals="0" methods="4" coveredmethods="0"/>
+      <file name="index.js" path="/Users/vikito/Desktop/Unit_test/js/pages/facadeDetails/index.js">
+        <metrics statements="7" coveredstatements="1" conditionals="4" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="91" count="0" type="stmt"/>
+        <line num="162" count="0" type="stmt"/>
+        <line num="163" count="0" type="stmt"/>
+        <line num="165" count="0" type="stmt"/>
+      </file>
+    </package>
     <package name="js.pages.home">
       <metrics statements="14" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
       <file name="index.js" path="/Users/vikito/Desktop/Unit_test/js/pages/home/index.js">
         <metrics statements="14" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
-        <line num="8" count="1" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
         <line num="12" count="0" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
         <line num="15" count="0" type="stmt"/>
@@ -62,6 +99,32 @@
         <line num="66" count="0" type="stmt"/>
         <line num="68" count="0" type="stmt"/>
         <line num="70" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="js.pages.signIn">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="index.js" path="/Users/vikito/Desktop/Unit_test/js/pages/signIn/index.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="js.router">
+      <metrics statements="12" coveredstatements="10" conditionals="9" coveredconditionals="4" methods="3" coveredmethods="3"/>
+      <file name="index.js" path="/Users/vikito/Desktop/Unit_test/js/router/index.js">
+        <metrics statements="12" coveredstatements="10" conditionals="9" coveredconditionals="4" methods="3" coveredmethods="3"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="31" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="34" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="36" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="47" count="1" type="cond" truecount="1" falsecount="2"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="53" count="1" type="stmt"/>
       </file>
     </package>
     <package name="js.samples.unit">
@@ -80,17 +143,74 @@
       <metrics statements="4" coveredstatements="1" conditionals="2" coveredconditionals="1" methods="4" coveredmethods="1"/>
       <file name="index.js" path="/Users/vikito/Desktop/Unit_test/js/utils/api/sensorsApi/index.js">
         <metrics statements="4" coveredstatements="1" conditionals="2" coveredconditionals="1" methods="4" coveredmethods="1"/>
-        <line num="5" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="5" count="3" type="cond" truecount="1" falsecount="1"/>
         <line num="8" count="0" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="js.utils.api.sensorsDetailsApi">
+      <metrics statements="7" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0"/>
+      <file name="index.js" path="/Users/vikito/Desktop/Unit_test/js/utils/api/sensorsDetailsApi/index.js">
+        <metrics statements="7" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="js.utils.api.weatherCastApi">
+      <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="index.js" path="/Users/vikito/Desktop/Unit_test/js/utils/api/weatherCastApi/index.js">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
       </file>
     </package>
     <package name="js.utils.env">
       <metrics statements="1" coveredstatements="1" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
       <file name="index.js" path="/Users/vikito/Desktop/Unit_test/js/utils/env/index.js">
         <metrics statements="1" coveredstatements="1" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="6" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="6" count="4" type="cond" truecount="2" falsecount="0"/>
+      </file>
+    </package>
+    <package name="js.utils.findComponentsByPath">
+      <metrics statements="1" coveredstatements="1" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
+      <file name="index.js" path="/Users/vikito/Desktop/Unit_test/js/utils/findComponentsByPath/index.js">
+        <metrics statements="1" coveredstatements="1" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="cond" truecount="1" falsecount="1"/>
+      </file>
+    </package>
+    <package name="js.utils.signInForm">
+      <metrics statements="23" coveredstatements="6" conditionals="8" coveredconditionals="0" methods="5" coveredmethods="1"/>
+      <file name="index.js" path="/Users/vikito/Desktop/Unit_test/js/utils/signInForm/index.js">
+        <metrics statements="23" coveredstatements="6" conditionals="8" coveredconditionals="0" methods="5" coveredmethods="1"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="13" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="29" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="39" count="1" type="cond" truecount="0" falsecount="2"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="48" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="49" count="0" type="stmt"/>
       </file>
     </package>
   </project>
