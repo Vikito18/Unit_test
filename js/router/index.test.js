@@ -30,4 +30,17 @@ describe("route integration test suites", () => {
       "Vos capteurs"
     );
   });
+
+  it("should display facade-details page", async () => {
+    document.body.innerHTML = `
+    <div id="root"></div>`;
+
+    document.location = "/#/facade-details";
+
+    await router();
+
+    expect(getByTestId(document.body, "sensor-detail-title")).toHaveTextContent(
+      "Détails du capteur #7"
+    );
+  });
 });
