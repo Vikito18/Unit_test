@@ -43,4 +43,17 @@ describe("route integration test suites", () => {
       "Détails du capteur #7"
     );
   });
+
+  it("should display add-sensor page", async () => {
+    document.body.innerHTML = `
+    <div id="root"></div>`;
+
+    document.location = "/#/add-sensor";
+
+    await router();
+
+    expect(getByTestId(document.body, "add-sensor-title")).toHaveTextContent(
+      "Ajout d'un nouveau capteur"
+    );
+  });
 });
