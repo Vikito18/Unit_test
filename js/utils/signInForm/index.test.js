@@ -19,7 +19,7 @@ afterEach(() => {
 });
 
 describe("signIn integrations test suites", () => {
-  it("should display an email error message", () => {
+  it("should display an email error message with a wrong email", () => {
     userEvent.type(
       getByLabelText(document.body, "Votre addresse e-mail"),
       "vik@gmail.com"
@@ -36,6 +36,24 @@ describe("signIn integrations test suites", () => {
     userEvent.type(
       getByLabelText(document.body, "Votre addresse e-mail"),
       "viki@gmail.com"
+    );
+
+    userEvent.click(getByRole(document.body, "button"));
+
+    expect(
+      getByTestId(document.body, "user-password-error-msg")
+    ).not.toHaveClass("hidden");
+  });
+
+  it("should retunr an pwd error message with enmail & wrong pwd", () => {
+    userEvent.type(
+      getByLabelText(document.body, "Votre addresse e-mail"),
+      "viki@gmail.com"
+    );
+
+    userEvent.type(
+      getByLabelText(document.body, "Votre mot de passe"),
+      "yollo"
     );
 
     userEvent.click(getByRole(document.body, "button"));
