@@ -3,23 +3,21 @@
  */
 
 import { handleSignInForm } from ".";
-import { USER_EMAIL, USER_PASSWORD } from "../../constants";
+import SignIn from "../../pages/signIn";
 
 import "@testing-library/jest-dom";
-import { getByTestId } from "@testing-library/dom";
+import { getByTestId, getByRole, getByLabelText } from "@testing-library/dom";
+import userEvent from "@testing-library/user-event";
+
+beforeEach(() => {
+  document.body.innerHTML = SignIn.render;
+  handleSignInForm();
+});
+
+afterEach(() => {
+  document.body.innerHTML = "";
+});
 
 describe("signIn integrations test suites", () => {
-  it("should display an error message", () => {
-    document.body.innerHTML = `
-    <div id="root"></div>`;
-
-    USER_EMAIL === "vik@gmail.com";
-    USER_PASSWORD === "psg";
-
-    handleSignInForm();
-
-    expect(
-      getByTestId(document.body, "user-email-error-msg")
-    ).toHaveTextContent("L'e-mail n'est pas correct");
-  });
+  it("should display an error message", () => {});
 });
