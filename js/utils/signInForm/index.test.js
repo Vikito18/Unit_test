@@ -19,7 +19,7 @@ afterEach(() => {
 });
 
 describe("signIn integrations test suites", () => {
-  it("should display an error message", () => {
+  it("should display an email error message", () => {
     userEvent.type(
       getByLabelText(document.body, "Votre addresse e-mail"),
       "vik@gmail.com"
