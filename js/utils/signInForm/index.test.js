@@ -31,4 +31,17 @@ describe("signIn integrations test suites", () => {
       "hidden"
     );
   });
+
+  it("should retunr an pwd error message with enmail & not pwd", () => {
+    userEvent.type(
+      getByLabelText(document.body, "Votre addresse e-mail"),
+      "viki@gmail.com"
+    );
+
+    userEvent.click(getByRole(document.body, "button"));
+
+    expect(
+      getByTestId(document.body, "user-password-error-msg")
+    ).not.toHaveClass("hidden");
+  });
 });
