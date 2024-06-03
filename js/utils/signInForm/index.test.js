@@ -19,5 +19,16 @@ afterEach(() => {
 });
 
 describe("signIn integrations test suites", () => {
-  it("should display an error message", () => {});
+  it("should display an error message", () => {
+    userEvent.type(
+      getByLabelText(document.body, "Votre addresse e-mail"),
+      "vik@gmail.com"
+    );
+
+    userEvent.click(getByRole(document.body, "button"));
+
+    expect(getByTestId(document.body, "user-email-error-msg")).not.toHaveClass(
+      "hidden"
+    );
+  });
 });
