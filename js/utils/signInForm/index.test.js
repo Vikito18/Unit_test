@@ -32,7 +32,7 @@ describe("signIn integrations test suites", () => {
     );
   });
 
-  it("should retunr an pwd error message with enmail & not pwd", () => {
+  it("should return an pwd error message with enmail & not pwd", () => {
     userEvent.type(
       getByLabelText(document.body, "Votre addresse e-mail"),
       "viki@gmail.com"
@@ -45,7 +45,7 @@ describe("signIn integrations test suites", () => {
     ).not.toHaveClass("hidden");
   });
 
-  it("should retunr an pwd error message with enmail & wrong pwd", () => {
+  it("should return an pwd error message with enmail & wrong pwd", () => {
     userEvent.type(
       getByLabelText(document.body, "Votre addresse e-mail"),
       "viki@gmail.com"
@@ -61,5 +61,23 @@ describe("signIn integrations test suites", () => {
     expect(
       getByTestId(document.body, "user-password-error-msg")
     ).not.toHaveClass("hidden");
+  });
+
+  it("should not return any error mesg with good emaiil & pwd", () => {
+    userEvent.type(
+      getByLabelText(document.body, "Votre addresse e-mail"),
+      "viki@gmail.com"
+    );
+
+    userEvent.type(getByLabelText(document.body, "Votre mot de passe"), "psg");
+
+    userEvent.click(getByRole(document.body, "button"));
+
+    expect(getByTestId(document.body, "user-password-error-msg")).toHaveClass(
+      "hidden"
+    );
+    expect(getByTestId(document.body, "user-password-error-msg")).toHaveClass(
+      "hidden"
+    );
   });
 });
